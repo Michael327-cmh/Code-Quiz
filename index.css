@@ -30,22 +30,8 @@ lesson in order to build out the questions, make them clickable,
 and record the answer.
 Inquire about recording answers as this concept still eludes you and you
 were not able to achieve this task on the previous assignment.
-Five Questions for Quiz. 9 pages in total. 
 "View Highscores" -exists in the top left of screen
 "Time:(numerical value)" - exists in top right corner of screen. Counts down and adjusts for incorrect answers.
 Response to answer populates below the clickable answers, below the <br> or bottom border.
 See 04-web-apis-homework-demo stored in the OSU coding folder on the desktop.
-1. Coding Quiz Challenge.: 
-Try to anser the following code-related queistions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds! 
-button "Start Quiz"
-2. Commonly used data types DO NOT Include: 1.strings 2.booleans 3.alerts 4.numbers
-3. The condition in an if/else statement is enclosed within ___. 1.quotes 2.curly brackets 3.parentheses 4.square brackets
-4. Arrays in JavaScript can be used to store ___. 1.numbers and strings 2.other arrays 3.booleans 4.all of the above
-5. String values must be enclosed within ___ when being assigned to variables. 1.commas 2.curly brackets 3.quotes 4.parentheses
-6. A very useful tool used during development and debugging for printing content to the debugger is: 1.JavaScript 2.terminal/bash 3.for loops 4.console.log
-7. All done! 
-  Your final score is ___.
-  Enter initials: "text box available for initials" button "Submit"
-8. Highscores
-  Text box with players initials - scores
-  two buttons (left to right) "Go back" "Clear Highscores"
+

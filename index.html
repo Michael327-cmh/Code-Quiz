@@ -8,12 +8,26 @@
     <link rel="stylesheet" href ="index.css" />
 </head>
 <body>
-    <div class="container">
+    <header class="container">
         <h1 class="welcome">Welcome to Speed Reader</h1>
+        <h2>Coding Quiz Challenge:</h2>
+        <h3>Try to Answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score & time by ten seconds!</h3>
         <button class="start-button">Start</button> 
-        <h3 id="countdown"></h3>
+        <h4 id="countdown"></h4>
+        </header>
+    <main>
         <p id="main"></p>
-      </div>
+        <div>All done!</div>
+        <ul>Your final score is </ul> <!--May want to make this a concantenation and just put an id in this line.-->
+        <ul>Enter initials:</ul> <!--May want to make this a concantenation and just put an id in this line. 
+            Enter initials: "text box available for initials" button "Submit"-->
+    
+        <p>Highscores
+            <br>
+            <button class="Go-Back">Go Back</button>
+            <button class="Clear-Highscores">Clear Highscores</button>
+        </p> <!--Text box with players initials - scores-->
+        </main>
       <script src="script.js"></script>
 </body>
 </html>
