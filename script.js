@@ -1,13 +1,21 @@
 var timerEl = document.getElementById('countdown');
 var mainEl = document.getElementById('main');
-
+var Startbutton = document.querySelector(".start_button");
+var isWin = false;
 var message =
   'Some say the world will end in 🔥, Some say in ice. From what I’ve tasted of desire, I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate. To say that for destruction ice, Is also great, And would suffice.';
 var words = message.split(' ');
 
+function Start_btn () {
+  var isWin = false;
+  timerCount = 5;
+  Startbutton.disabled = true;
+  Starttimer()
+}
+Start_btn();
 // Timer that counts down from 5
-function countdown() {
-  var timeLeft = 5;
+function Starttimer() {
+  timercount = 8;
 
   // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
@@ -50,4 +58,4 @@ function displayMessage() {
   }, 1000);
 }
 
-countdown();
+
