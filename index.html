@@ -12,29 +12,38 @@
         <h1 class="welcome">Welcome to Speed Reader</h1>
         <h2>Coding Quiz Challenge:</h2>
         <h3>Try to Answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score & time by ten seconds!</h3>
+        <h4>When question appears, click to input answer. Type Enter once you have submitted your answer.</h4>
         <button type= "onclick" id="startbutton">Start</button> 
-        <h4 id="countdown"></h4>
+        <h5 id="countdown"></h5>
         </header>
 <br>
 <br>
 <br>        
-    <main>
-        <p id="main"></p>
-        <ul id="Q1"></ul>
-            <div id="A1">
-                <!--<input id="First"></input>-->
-            </div>
-        <ul id="Q2"></ul>
-            <div id="A2"></div>
-        <ul id="Q3"></ul>
-            <div id="A3"></div>
-        <ul id="Q4"></ul>
-            <div id="A4"></div>
-        <ul id="Q5"></ul>
-            <div id="A5"></div>
+
+<section >
+    <p id="QandA"></p>
+    <ul id="Q1"></ul>
+    <div id="A1"></div>
+    <ul id="Q2"></ul>
+    <div id="A2"></div>
+    <ul id="Q3"></ul>
+    <div id="A3"></div>
+    <ul id="Q4"></ul>
+    <div id="A4"></div>
+    <ul id="Q5"></ul>
+    <div id="A5"></div>
+</section>
+
+<main>
+    <div id="main">
+    <Form></Form>
+</div>
+</main>
+
 <br>
 <br>
 <br>
+    <section>
         <div>All done!</div>
         <ul>Your final score is </ul> <!--May want to make this a concantenation and just put an id in this line.-->
         <ul>Enter initials:</ul> <!--May want to make this a concantenation and just put an id in this line. 
@@ -45,7 +54,7 @@
             <button class="Go-Back">Go Back</button>
             <button class="Clear-Highscores">Clear Highscores</button>
         </p> <!--Text box with players initials - scores-->
-        </main>
+    </section>
       <script src="script.js"></script>
 </body>
 </html>

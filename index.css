@@ -9,12 +9,21 @@
     margin-bottom: 20px;
   }
   
+  #QandA {
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 100%;
+    height: 25px;
+    }
+
   #main {
     margin-bottom: 20px;
     font-size: 25px;
     width: 100%;
     height: 25px;
-  }
+    padding-top: 2%;
+    }
+  
   
   #read {
     margin: auto;

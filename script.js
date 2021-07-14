@@ -10,6 +10,10 @@ var Question5 = "A very useful tool used during development and debugging for pr
 var Answers5 = ["JavaScript", "Terminal/bash", "For Loops", "Console.Log"];
 
 var time = 5;
+var questiontime = 20;
+var form = document.querySelector("form");
+var input = document.querySelector("input");
+
 var timerEl = document.getElementById("countdown");
 var Q1El = document.getElementById("Q1");
 var A1El = document.getElementById("A1");
@@ -30,11 +34,10 @@ Startbutton.addEventListener("click", function () {
         timerEl.textContent = time + " seconds left till test over!";
         if(time === 0) {
             sendtime1();
-            sendtime2();
-            sendtime3();
-            sendtime4();
-            sendtime5();
-            //Answer1();
+            //sendtime2();
+            //sendtime3();
+            //sendtime4();
+            //sendtime5();
             clearInterval(timerInterval);
             timerEl.textContent = ("");
         }
@@ -48,7 +51,15 @@ function sendtime1 () {
     document.getElementById("A1").innerHTML = txt;
     function myFunction(value) {
         txt += "-" + value + "<br>"
-    }
+    } 
+    
+    document.addEventListener ("click", function () {
+        var form = document.createElement("form");
+        var input = document.createElement("input");
+    
+        form.appendChild(input);
+        main.appendChild(form);
+    })
 };
 
 function sendtime2 () {
@@ -87,7 +98,6 @@ function sendtime5 () {
         txt += "-" + value + "<br>"
     }
 };
-
 
 
 
