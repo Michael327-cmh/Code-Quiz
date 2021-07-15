@@ -9,12 +9,16 @@ var Answers4 = ["Commas", "Curly Brackets", "Quotes", "Parentheses"];
 var Question5 = "A very useful tool used during development and debugging for printing content to the debugger is:";
 var Answers5 = ["JavaScript", "Terminal/bash", "For Loops", "Console.Log"];
 
-var time = 5;
-var questiontime = 20;
+var wins=0;
+var losses=0;
+var ties=0;
+
+var time = 65;
+
 var form = document.querySelector("form");
 var input = document.querySelector("input");
-
 var timerEl = document.getElementById("countdown");
+var BEGINS = document.getElementById("countdown1");
 var Q1El = document.getElementById("Q1");
 var A1El = document.getElementById("A1");
 var Q2El = document.getElementById("Q2");
@@ -28,21 +32,26 @@ var A5El = document.getElementById("A5");
 var Startbutton = document.getElementById("startbutton");
 var Firstbutton = document.getElementById("First");
 
-Startbutton.addEventListener("click", function () {
+function startgame () {
+    Startbutton.addEventListener("click", function () {
     var timerInterval = setInterval(function() {
         time--;
         timerEl.textContent = time + " seconds left till test over!";
-        if(time === 0) {
+        if(time === 60) {
             sendtime1();
-            //sendtime2();
-            //sendtime3();
-            //sendtime4();
-            //sendtime5();
+            sendtime2();
+            sendtime3();
+            sendtime4();
+            sendtime5();
+        }if(time === 0) {
             clearInterval(timerInterval);
             timerEl.textContent = ("");
         }
     }, 1000);
-});
+})}
+
+startgame()
+
 
 function sendtime1 () {
     Q1El.textContent = Question1;
@@ -58,8 +67,10 @@ function sendtime1 () {
         var input = document.createElement("input");
     
         form.appendChild(input);
-        main.appendChild(form);
+        A1.appendChild(form);
+        
     })
+    
 };
 
 function sendtime2 () {
@@ -70,6 +81,14 @@ function sendtime2 () {
     function myFunction(value) {
         txt += "-" + value + "<br>"
     }
+
+    document.addEventListener ("click", function () {
+        var form = document.createElement("form");
+        var input = document.createElement("input");
+    
+        form.appendChild(input);
+        A2.appendChild(form);
+    })
 };
 function sendtime3 () {
     Q3El.textContent = Question3;
@@ -79,6 +98,14 @@ function sendtime3 () {
     function myFunction(value) {
         txt += "-" + value + "<br>"
     }
+
+    document.addEventListener ("click", function () {
+        var form = document.createElement("form");
+        var input = document.createElement("input");
+    
+        form.appendChild(input);
+        A3.appendChild(form);
+    })
 };
 function sendtime4 () {
     Q4El.textContent = Question4;
@@ -88,6 +115,14 @@ function sendtime4 () {
     function myFunction(value) {
         txt += "-" + value + "<br>"
     }
+
+    document.addEventListener ("click", function () {
+        var form = document.createElement("form");
+        var input = document.createElement("input");
+    
+        form.appendChild(input);
+        A4.appendChild(form);
+    })
 };
 function sendtime5 () {
     Q5El.textContent = Question5;
@@ -97,19 +132,20 @@ function sendtime5 () {
     function myFunction(value) {
         txt += "-" + value + "<br>"
     }
+
+    document.addEventListener ("click", function () {
+        var form = document.createElement("form");
+        var input = document.createElement("input");
+    
+        form.appendChild(input);
+        A5.appendChild(form);
+    })
 };
 
+//Need a form to submit inputs
+//Need a function for timer reset upon submit
+//Need a function to cause timer to reduce in time by 10 seconds for every wrong answer.
+ 
 
 
 
-
-
-
-
-
-
-
-
-//var QA1 = function () {
-  //  var userchoice = Answer1[i];
-//}
