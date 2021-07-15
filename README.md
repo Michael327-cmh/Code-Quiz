@@ -1,3 +1,6 @@
+Link to gitpages URL:  https://michael327-cmh.github.io/Code-Quiz/
+
+
 # Code-Quiz
 Coding Assessment designed to reflect a real world application of something an applicant may encounter during the interview process. 
 
